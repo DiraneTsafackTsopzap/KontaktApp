@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F3C2F3B299A994200E7DDE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3F3C2F3A299A994200E7DDE3 /* FirebaseAuth */; };
+		3F3C2F3D299A994200E7DDE3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3F3C2F3C299A994200E7DDE3 /* FirebaseFirestore */; };
+		3F3C2F3F299A994200E7DDE3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3F3C2F3E299A994200E7DDE3 /* FirebaseFirestoreSwift */; };
+		3F3C2F43299AA2B900E7DDE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C2F42299AA2B900E7DDE3 /* GoogleService-Info.plist */; };
+		3F3C2F50299AB78100E7DDE3 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F4F299AB78100E7DDE3 /* PersonModel.swift */; };
+		3F5641B6299AF951003981B6 /* PersonEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5641B5299AF950003981B6 /* PersonEditView.swift */; };
+		3F792DB229DF2E1B008D234C /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F792DB129DF2E1B008D234C /* PersonService.swift */; };
+		3F841BE529A1A34A0095EF15 /* PersonValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F841BE429A1A34A0095EF15 /* PersonValidation.swift */; };
+		3FD7E0EF29AEC7BE009138DA /* Person_Login_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7E0EE29AEC7BE009138DA /* Person_Login_View.swift */; };
+		3FD7E0F129AEDE67009138DA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7E0F029AEDE67009138DA /* UserModel.swift */; };
+		3FD7E0F329AEE1D0009138DA /* UserValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7E0F229AEE1D0009138DA /* UserValidation.swift */; };
+		3FD9B43B299969630045DAA5 /* KontactAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9B43A299969630045DAA5 /* KontactAppApp.swift */; };
+		3FD9B43F299969650045DAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD9B43E299969650045DAA5 /* Assets.xcassets */; };
+		3FD9B442299969650045DAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD9B441299969650045DAA5 /* Preview Assets.xcassets */; };
+		3FD9B44C299969650045DAA5 /* KontactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9B44B299969650045DAA5 /* KontactAppTests.swift */; };
+		3FD9B456299969650045DAA5 /* KontactAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9B455299969650045DAA5 /* KontactAppUITests.swift */; };
+		3FD9B458299969650045DAA5 /* KontactAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9B457299969650045DAA5 /* KontactAppUITestsLaunchTests.swift */; };
+		3FD9B46629996FE40045DAA5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD9B46529996FE40045DAA5 /* SDWebImageSwiftUI */; };
+		3FD9B46B299970E20045DAA5 /* Person_List_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9B46A299970E20045DAA5 /* Person_List_View.swift */; };
+		3FD9B46E299971150045DAA5 /* PersonAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9B46D299971150045DAA5 /* PersonAddView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F90ACAC29D85A80008320E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD9B42F299969630045DAA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD9B436299969630045DAA5;
+			remoteInfo = KontactApp;
+		};
+		3F90ACBB29D8602E008320E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD9B42F299969630045DAA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD9B436299969630045DAA5;
+			remoteInfo = KontactApp;
+		};
+		3FD9B448299969650045DAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD9B42F299969630045DAA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD9B436299969630045DAA5;
+			remoteInfo = KontactApp;
+		};
+		3FD9B452299969650045DAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD9B42F299969630045DAA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD9B436299969630045DAA5;
+			remoteInfo = KontactApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F3C2F42299AA2B900E7DDE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F3C2F4F299AB78100E7DDE3 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		3F5641B5299AF950003981B6 /* PersonEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditView.swift; sourceTree = "<group>"; };
+		3F792DB129DF2E1B008D234C /* PersonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
+		3F841BE429A1A34A0095EF15 /* PersonValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonValidation.swift; sourceTree = "<group>"; };
+		3F90ACA629D85A80008320E5 /* Mein_Unit_Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mein_Unit_Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F90ACB529D8602E008320E5 /* TrainingUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD7E0EE29AEC7BE009138DA /* Person_Login_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person_Login_View.swift; sourceTree = "<group>"; };
+		3FD7E0F029AEDE67009138DA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3FD7E0F229AEE1D0009138DA /* UserValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidation.swift; sourceTree = "<group>"; };
+		3FD9B437299969630045DAA5 /* KontactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KontactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD9B43A299969630045DAA5 /* KontactAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontactAppApp.swift; sourceTree = "<group>"; };
+		3FD9B43E299969650045DAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FD9B441299969650045DAA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FD9B447299969650045DAA5 /* KontactAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KontactAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD9B44B299969650045DAA5 /* KontactAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontactAppTests.swift; sourceTree = "<group>"; };
+		3FD9B451299969650045DAA5 /* KontactAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KontactAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD9B455299969650045DAA5 /* KontactAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontactAppUITests.swift; sourceTree = "<group>"; };
+		3FD9B457299969650045DAA5 /* KontactAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontactAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FD9B46A299970E20045DAA5 /* Person_List_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person_List_View.swift; sourceTree = "<group>"; };
+		3FD9B46D299971150045DAA5 /* PersonAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAddView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F90ACA329D85A80008320E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F90ACB229D8602E008320E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B434299969630045DAA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD9B46629996FE40045DAA5 /* SDWebImageSwiftUI in Frameworks */,
+				3F3C2F3B299A994200E7DDE3 /* FirebaseAuth in Frameworks */,
+				3F3C2F3D299A994200E7DDE3 /* FirebaseFirestore in Frameworks */,
+				3F3C2F3F299A994200E7DDE3 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B444299969650045DAA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B44E299969650045DAA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F792DB029DF2DF8008D234C /* FirebaseService */ = {
+			isa = PBXGroup;
+			children = (
+				3F792DB129DF2E1B008D234C /* PersonService.swift */,
+			);
+			path = FirebaseService;
+			sourceTree = "<group>";
+		};
+		3F841BE629A1A4360095EF15 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				3F841BE429A1A34A0095EF15 /* PersonValidation.swift */,
+				3FD7E0F229AEE1D0009138DA /* UserValidation.swift */,
+			);
+			path = Validations;
+			sourceTree = "<group>";
+		};
+		3FD9B42E299969630045DAA5 = {
+			isa = PBXGroup;
+			children = (
+				3FD9B439299969630045DAA5 /* KontactApp */,
+				3FD9B44A299969650045DAA5 /* KontactAppTests */,
+				3FD9B454299969650045DAA5 /* KontactAppUITests */,
+				3FD9B438299969630045DAA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FD9B438299969630045DAA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD9B437299969630045DAA5 /* KontactApp.app */,
+				3FD9B447299969650045DAA5 /* KontactAppTests.xctest */,
+				3FD9B451299969650045DAA5 /* KontactAppUITests.xctest */,
+				3F90ACA629D85A80008320E5 /* Mein_Unit_Test.xctest */,
+				3F90ACB529D8602E008320E5 /* TrainingUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FD9B439299969630045DAA5 /* KontactApp */ = {
+			isa = PBXGroup;
+			children = (
+				3F792DB029DF2DF8008D234C /* FirebaseService */,
+				3F841BE629A1A4360095EF15 /* Validations */,
+				3FD9B46C299970FB0045DAA5 /* Pages */,
+				3FD9B467299970350045DAA5 /* Model */,
+				3FD9B43A299969630045DAA5 /* KontactAppApp.swift */,
+				3FD9B43E299969650045DAA5 /* Assets.xcassets */,
+				3F3C2F42299AA2B900E7DDE3 /* GoogleService-Info.plist */,
+				3FD9B440299969650045DAA5 /* Preview Content */,
+			);
+			path = KontactApp;
+			sourceTree = "<group>";
+		};
+		3FD9B440299969650045DAA5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FD9B441299969650045DAA5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FD9B44A299969650045DAA5 /* KontactAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FD9B44B299969650045DAA5 /* KontactAppTests.swift */,
+			);
+			path = KontactAppTests;
+			sourceTree = "<group>";
+		};
+		3FD9B454299969650045DAA5 /* KontactAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FD9B455299969650045DAA5 /* KontactAppUITests.swift */,
+				3FD9B457299969650045DAA5 /* KontactAppUITestsLaunchTests.swift */,
+			);
+			path = KontactAppUITests;
+			sourceTree = "<group>";
+		};
+		3FD9B467299970350045DAA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C2F4F299AB78100E7DDE3 /* PersonModel.swift */,
+				3FD7E0F029AEDE67009138DA /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FD9B46C299970FB0045DAA5 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				3FD9B46A299970E20045DAA5 /* Person_List_View.swift */,
+				3FD9B46D299971150045DAA5 /* PersonAddView.swift */,
+				3F5641B5299AF950003981B6 /* PersonEditView.swift */,
+				3FD7E0EE29AEC7BE009138DA /* Person_Login_View.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F90ACA529D85A80008320E5 /* Mein_Unit_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F90ACB029D85A80008320E5 /* Build configuration list for PBXNativeTarget "Mein_Unit_Test" */;
+			buildPhases = (
+				3F90ACA229D85A80008320E5 /* Sources */,
+				3F90ACA329D85A80008320E5 /* Frameworks */,
+				3F90ACA429D85A80008320E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F90ACAD29D85A80008320E5 /* PBXTargetDependency */,
+			);
+			name = Mein_Unit_Test;
+			productName = Mein_Unit_Test;
+			productReference = 3F90ACA629D85A80008320E5 /* Mein_Unit_Test.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3F90ACB429D8602E008320E5 /* TrainingUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F90ACBD29D8602E008320E5 /* Build configuration list for PBXNativeTarget "TrainingUnitTests" */;
+			buildPhases = (
+				3F90ACB129D8602E008320E5 /* Sources */,
+				3F90ACB229D8602E008320E5 /* Frameworks */,
+				3F90ACB329D8602E008320E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F90ACBC29D8602E008320E5 /* PBXTargetDependency */,
+			);
+			name = TrainingUnitTests;
+			productName = TrainingUnitTests;
+			productReference = 3F90ACB529D8602E008320E5 /* TrainingUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3FD9B436299969630045DAA5 /* KontactApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD9B45B299969650045DAA5 /* Build configuration list for PBXNativeTarget "KontactApp" */;
+			buildPhases = (
+				3FD9B433299969630045DAA5 /* Sources */,
+				3FD9B434299969630045DAA5 /* Frameworks */,
+				3FD9B435299969630045DAA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KontactApp;
+			packageProductDependencies = (
+				3FD9B46529996FE40045DAA5 /* SDWebImageSwiftUI */,
+				3F3C2F3A299A994200E7DDE3 /* FirebaseAuth */,
+				3F3C2F3C299A994200E7DDE3 /* FirebaseFirestore */,
+				3F3C2F3E299A994200E7DDE3 /* FirebaseFirestoreSwift */,
+			);
+			productName = KontactApp;
+			productReference = 3FD9B437299969630045DAA5 /* KontactApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FD9B446299969650045DAA5 /* KontactAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD9B45E299969650045DAA5 /* Build configuration list for PBXNativeTarget "KontactAppTests" */;
+			buildPhases = (
+				3FD9B443299969650045DAA5 /* Sources */,
+				3FD9B444299969650045DAA5 /* Frameworks */,
+				3FD9B445299969650045DAA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FD9B449299969650045DAA5 /* PBXTargetDependency */,
+			);
+			name = KontactAppTests;
+			productName = KontactAppTests;
+			productReference = 3FD9B447299969650045DAA5 /* KontactAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FD9B450299969650045DAA5 /* KontactAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD9B461299969650045DAA5 /* Build configuration list for PBXNativeTarget "KontactAppUITests" */;
+			buildPhases = (
+				3FD9B44D299969650045DAA5 /* Sources */,
+				3FD9B44E299969650045DAA5 /* Frameworks */,
+				3FD9B44F299969650045DAA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FD9B453299969650045DAA5 /* PBXTargetDependency */,
+			);
+			name = KontactAppUITests;
+			productName = KontactAppUITests;
+			productReference = 3FD9B451299969650045DAA5 /* KontactAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FD9B42F299969630045DAA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3F90ACA529D85A80008320E5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3FD9B436299969630045DAA5;
+					};
+					3F90ACB429D8602E008320E5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3FD9B436299969630045DAA5;
+					};
+					3FD9B436299969630045DAA5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					3FD9B446299969650045DAA5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3FD9B436299969630045DAA5;
+					};
+					3FD9B450299969650045DAA5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3FD9B436299969630045DAA5;
+					};
+				};
+			};
+			buildConfigurationList = 3FD9B432299969630045DAA5 /* Build configuration list for PBXProject "KontactApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FD9B42E299969630045DAA5;
+			packageReferences = (
+				3FD9B46429996FE40045DAA5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				3F3C2F39299A994200E7DDE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 3FD9B438299969630045DAA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FD9B436299969630045DAA5 /* KontactApp */,
+				3FD9B446299969650045DAA5 /* KontactAppTests */,
+				3FD9B450299969650045DAA5 /* KontactAppUITests */,
+				3F90ACA529D85A80008320E5 /* Mein_Unit_Test */,
+				3F90ACB429D8602E008320E5 /* TrainingUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F90ACA429D85A80008320E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F90ACB329D8602E008320E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B435299969630045DAA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD9B442299969650045DAA5 /* Preview Assets.xcassets in Resources */,
+				3FD9B43F299969650045DAA5 /* Assets.xcassets in Resources */,
+				3F3C2F43299AA2B900E7DDE3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B445299969650045DAA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B44F299969650045DAA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F90ACA229D85A80008320E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F90ACB129D8602E008320E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B433299969630045DAA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C2F50299AB78100E7DDE3 /* PersonModel.swift in Sources */,
+				3FD9B46B299970E20045DAA5 /* Person_List_View.swift in Sources */,
+				3FD9B46E299971150045DAA5 /* PersonAddView.swift in Sources */,
+				3F792DB229DF2E1B008D234C /* PersonService.swift in Sources */,
+				3FD9B43B299969630045DAA5 /* KontactAppApp.swift in Sources */,
+				3FD7E0EF29AEC7BE009138DA /* Person_Login_View.swift in Sources */,
+				3F841BE529A1A34A0095EF15 /* PersonValidation.swift in Sources */,
+				3FD7E0F329AEE1D0009138DA /* UserValidation.swift in Sources */,
+				3FD7E0F129AEDE67009138DA /* UserModel.swift in Sources */,
+				3F5641B6299AF951003981B6 /* PersonEditView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B443299969650045DAA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD9B44C299969650045DAA5 /* KontactAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD9B44D299969650045DAA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD9B456299969650045DAA5 /* KontactAppUITests.swift in Sources */,
+				3FD9B458299969650045DAA5 /* KontactAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F90ACAD29D85A80008320E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD9B436299969630045DAA5 /* KontactApp */;
+			targetProxy = 3F90ACAC29D85A80008320E5 /* PBXContainerItemProxy */;
+		};
+		3F90ACBC29D8602E008320E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD9B436299969630045DAA5 /* KontactApp */;
+			targetProxy = 3F90ACBB29D8602E008320E5 /* PBXContainerItemProxy */;
+		};
+		3FD9B449299969650045DAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD9B436299969630045DAA5 /* KontactApp */;
+			targetProxy = 3FD9B448299969650045DAA5 /* PBXContainerItemProxy */;
+		};
+		3FD9B453299969650045DAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD9B436299969630045DAA5 /* KontactApp */;
+			targetProxy = 3FD9B452299969650045DAA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F90ACAE29D85A80008320E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dehshl.Mein-Unit-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KontactApp;
+			};
+			name = Debug;
+		};
+		3F90ACAF29D85A80008320E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dehshl.Mein-Unit-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KontactApp;
+			};
+			name = Release;
+		};
+		3F90ACBE29D8602E008320E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.TrainingUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KontactApp;
+			};
+			name = Debug;
+		};
+		3F90ACBF29D8602E008320E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.TrainingUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KontactApp;
+			};
+			name = Release;
+		};
+		3FD9B459299969650045DAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FD9B45A299969650045DAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FD9B45C299969650045DAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KontactApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.KontactApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FD9B45D299969650045DAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KontactApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.KontactApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FD9B45F299969650045DAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.KontactAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KontactApp.app/KontactApp";
+			};
+			name = Debug;
+		};
+		3FD9B460299969650045DAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.KontactAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KontactApp.app/KontactApp";
+			};
+			name = Release;
+		};
+		3FD9B462299969650045DAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.KontactAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KontactApp;
+			};
+			name = Debug;
+		};
+		3FD9B463299969650045DAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dehshl.KontactAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KontactApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F90ACB029D85A80008320E5 /* Build configuration list for PBXNativeTarget "Mein_Unit_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F90ACAE29D85A80008320E5 /* Debug */,
+				3F90ACAF29D85A80008320E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F90ACBD29D8602E008320E5 /* Build configuration list for PBXNativeTarget "TrainingUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F90ACBE29D8602E008320E5 /* Debug */,
+				3F90ACBF29D8602E008320E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD9B432299969630045DAA5 /* Build configuration list for PBXProject "KontactApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD9B459299969650045DAA5 /* Debug */,
+				3FD9B45A299969650045DAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD9B45B299969650045DAA5 /* Build configuration list for PBXNativeTarget "KontactApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD9B45C299969650045DAA5 /* Debug */,
+				3FD9B45D299969650045DAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD9B45E299969650045DAA5 /* Build configuration list for PBXNativeTarget "KontactAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD9B45F299969650045DAA5 /* Debug */,
+				3FD9B460299969650045DAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD9B461299969650045DAA5 /* Build configuration list for PBXNativeTarget "KontactAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD9B462299969650045DAA5 /* Debug */,
+				3FD9B463299969650045DAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F3C2F39299A994200E7DDE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3FD9B46429996FE40045DAA5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F3C2F3A299A994200E7DDE3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F3C2F39299A994200E7DDE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3F3C2F3C299A994200E7DDE3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F3C2F39299A994200E7DDE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3F3C2F3E299A994200E7DDE3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F3C2F39299A994200E7DDE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		3FD9B46529996FE40045DAA5 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD9B46429996FE40045DAA5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3FD9B42F299969630045DAA5 /* Project object */;
+}
